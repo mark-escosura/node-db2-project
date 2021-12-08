@@ -30,11 +30,11 @@ Build a RESTful API for an "cars" resource. The client for this API is a car dea
 
 #### Write Model Functions
 
-- Write the following db access functions inside `api/cars/cars-model.js` using Knex:
+[x] Write the following db access functions inside `api/cars/cars-model.js` using Knex:
 
-  - `getAll` resolves to an array of car records (or an empty array)
-  - `getById` resolves to a car record by the given id
-  - `create` resolves to the newly created car record
+  [x] `getAll` resolves to an array of car records (or an empty array)
+  [x] `getById` resolves to a car record by the given id
+  [x] `create` resolves to the newly created car record
 
 #### Write Middleware
 
