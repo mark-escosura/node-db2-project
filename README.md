@@ -38,15 +38,15 @@ Build a RESTful API for an "cars" resource. The client for this API is a car dea
 
 #### Write Middleware
 
-- Write the following middlewares inside `api/cars/cars-middleware.js`:
+[x] Write the following middlewares inside `api/cars/cars-middleware.js`:
 
-  - `checkCarId` returns a status 404 with a `{ message: "car with id <car id> is not found" }` if the id in `req.params` does not exist in the database.
+  [x] `checkCarId` returns a status 404 with a `{ message: "car with id <car id> is not found" }` if the id in `req.params` does not exist in the database.
 
-  - `checkCarPayload` returns a status 400 with a `{ message: "<field name> is missing" }` if any required field is missing.
+  [x] `checkCarPayload` returns a status 400 with a `{ message: "<field name> is missing" }` if any required field is missing.
 
-  - `checkVinNumberValid` returns a status 400 with a `{ message: "vin <vin number> is invalid" }` if the vin number is [invalid](https://www.npmjs.com/package/vin-validator).
+  [x] `checkVinNumberValid` returns a status 400 with a `{ message: "vin <vin number> is invalid" }` if the vin number is [invalid](https://www.npmjs.com/package/vin-validator).
 
-  - `checkVinNumberUnique` returns a status 400 with a `{ message: "vin <vin number> already exists" }` if the vin number already exists in the database.
+  [x] `checkVinNumberUnique` returns a status 400 with a `{ message: "vin <vin number> already exists" }` if the vin number already exists in the database.
 
 ### Write a Cars API
 

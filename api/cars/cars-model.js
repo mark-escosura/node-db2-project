@@ -14,6 +14,10 @@ const getById = async (carId) => {
     .where("id", "=", carId);
   return rows;
 }
+/** [getByVin] resolves to a car record by the given unique vin number  */
+const getByVin = (vin) =>{
+  return db('cars').where('vin', vin).first()
+}
 
 /** [create] resolves to the newly created car record */
 const create = async (newCar) => {
@@ -25,5 +29,6 @@ const create = async (newCar) => {
 module.exports = {
   getAll,
   getById,
+  getByVin,
   create
 }
