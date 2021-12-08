@@ -50,14 +50,14 @@ Build a RESTful API for an "cars" resource. The client for this API is a car dea
 
 ### Write a Cars API
 
-- Write CR (of CRUD) for the `cars` resource, using the middleware and model functions described above wherever appropriate inside `api/cars/cars-router.js` :
+[x] Write CR (of CRUD) for the `cars` resource, using the middleware and model functions described above wherever appropriate inside `api/cars/cars-router.js` :
 
-  - `[GET] /api/cars` returns an array of cars sorted by id (or an empty array if there aren't any).
-  - `[GET] /api/cars/:id` returns a car by the given id.
-  - `[POST] /api/cars` returns the created car.
+  [x] `[GET] /api/cars` returns an array of cars sorted by id (or an empty array if there aren't any).
+  [x] `[GET] /api/cars/:id` returns a car by the given id.
+  [x] `[POST] /api/cars` returns the created car.
 
-- Manually test your endpoints with a REST client like `Insomnia` or `Postman` to check they are working as expected.
-- Test your endpoints automatically by running `npm test`.
+[x] Manually test your endpoints with a REST client like `Insomnia` or `Postman` to check they are working as expected.
+[x] Test your endpoints automatically by running `npm test`.
 
 #### Notes
 
@@ -68,6 +68,6 @@ Build a RESTful API for an "cars" resource. The client for this API is a car dea
 
 ### Task 3: Stretch Problems
 
-- Add seed data to the database using `knex seeds`
+[x] Add seed data to the database using `knex seeds`
 - Add `[PUT]` and `[DELETE]` operations to your API.
 - Write a schema file for a `sales` table. This table should track information on the sale of each car. You may wish to research `foreign keys` in order to link each sale to the entry in `cars` which sold.
